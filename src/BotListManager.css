@@ -1,0 +1,53 @@
+/*Whole page styling*/
+.bot-list-manager {
+    margin-left: 40px;
+}
+
+/*Colours it based on the status*/
+.Running {
+    color: rgb(197, 209, 33);
+}
+.Completed {
+    color: green;
+}
+.Stopped {
+    color: red;
+}
+
+/*Stlying page elements*/
+h2 {
+    margin: 0;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 7fr 3fr 1fr;
+    width: 750px;
+}
+
+p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.statusChanger {
+    visibility: hidden;
+}
+.statusChanger#selected {
+    visibility: visible;
+}
+
+svg:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
+
+select[multiple] {
+    margin: 0;
+    padding: 3px 0;
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 5px;
+}
